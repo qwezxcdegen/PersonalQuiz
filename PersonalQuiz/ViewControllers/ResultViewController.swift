@@ -33,9 +33,10 @@ final class ResultViewController: UIViewController {
     
     // MARK: - Private Methods
     private func findTheAnimal() -> Animal {
-        var currentCount = 0
-        var favAnimal = (animal: Animal.dog, count: 0)
         let animalsChosen = answersChosen.compactMap { $0.animal }
+        var favAnimal = (animal: Animal.dog, count: 0)
+        var currentCount = 0
+        
         for animal in Animal.allCases {
             for chosen in animalsChosen {
                 if animal == chosen {
