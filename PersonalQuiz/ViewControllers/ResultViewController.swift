@@ -8,6 +8,7 @@
 import UIKit
 
 final class ResultViewController: UIViewController {
+    
     // MARK: - IBOutlets
     @IBOutlet weak var animalLabel: UILabel!
     @IBOutlet weak var animalDescriptionLabel: UILabel!
